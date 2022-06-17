@@ -10,5 +10,6 @@ public with sharing class CL_1506_DataTable1 {
         contacts= [Select Id, Name, Phone, Email from Contact limit 10 ];
     }
     return contacts;
+    //commenting for checking git
 }
 }

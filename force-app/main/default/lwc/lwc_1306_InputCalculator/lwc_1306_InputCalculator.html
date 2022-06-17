@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="LWC Calculatore">
+        <lightning-input type="number" label="Enter First Number: " name="aval" onchange={callme}></lightning-input>
+        <lightning-input type="number" label="Enter Second Number: " name="bval" onchange={callme}></lightning-input>
+
+        <lightning-button label="Add" onclick={addme}></lightning-button>
+        <lightning-button label="Substarct" onclick={sub}></lightning-button>
+        <lightning-button label="Multiply" onclick={mul}></lightning-button>
+        
+        <p></p>
+        <p></p>
+        Result:{resvalue}
+    </lightning-card>
+</template>

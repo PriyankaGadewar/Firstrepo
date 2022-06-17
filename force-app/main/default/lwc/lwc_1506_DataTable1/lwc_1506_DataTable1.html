@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Data Table Example" icon-name="standard:account">
+        <template if:true={contact.data}>
+            <lightning-datatable 
+               key-field="Id"
+               data={contact.data}
+               columns={col}
+               onsave={handleSave}
+               draft-values={draftValues}
+               >
+            </lightning-datatable>
+
+        <template if:true={contact.error}>
+           <!---Program here if in case any error -->
+        </template>
+    </template>
+
+    </lightning-card>
+</template>

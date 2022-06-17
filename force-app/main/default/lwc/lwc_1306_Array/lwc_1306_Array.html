@@ -1,0 +1,19 @@
+<template>
+    ==========Using for:each===========
+    <lightning-card title="Displaying Cities In Array">
+        <template for:each={cities} for:item="ec">
+            <p key={ec}> {ec} </p>
+        </template>
+    </lightning-card>
+    ==============using Iterator==============
+
+    <template iterator:item={cities}>
+        <p key={item.value}> {item.value}</p>
+    </template>
+
+    ============================================
+
+    <template iterator:item={employees}>
+        <p key={item.value}> {item.value} </p>
+    </template>
+</template>
